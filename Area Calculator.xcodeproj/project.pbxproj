@@ -13,6 +13,7 @@
 		0F682F4C19E5B1EB006230AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F682F4B19E5B1EB006230AB /* Images.xcassets */; };
 		0F682F4F19E5B1EB006230AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F682F4D19E5B1EB006230AB /* LaunchScreen.xib */; };
 		0F682F5B19E5B1EB006230AB /* Area_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F682F5A19E5B1EB006230AB /* Area_CalculatorTests.swift */; };
+		0F8FB83A19EB6EA9000559D8 /* Chancho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FB83919EB6EA9000559D8 /* Chancho.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		0F682F5419E5B1EB006230AB /* Area CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Area CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F682F5919E5B1EB006230AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F682F5A19E5B1EB006230AB /* Area_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area_CalculatorTests.swift; sourceTree = "<group>"; };
+		0F8FB83919EB6EA9000559D8 /* Chancho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chancho.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				0F682F4419E5B1EB006230AB /* AppDelegate.swift */,
 				0F682F4619E5B1EB006230AB /* ViewController.swift */,
+				0F8FB83919EB6EA9000559D8 /* Chancho.jpg */,
 				0F682F4819E5B1EB006230AB /* Main.storyboard */,
 				0F682F4B19E5B1EB006230AB /* Images.xcassets */,
 				0F682F4D19E5B1EB006230AB /* LaunchScreen.xib */,
@@ -194,6 +197,7 @@
 			files = (
 				0F682F4A19E5B1EB006230AB /* Main.storyboard in Resources */,
 				0F682F4F19E5B1EB006230AB /* LaunchScreen.xib in Resources */,
+				0F8FB83A19EB6EA9000559D8 /* Chancho.jpg in Resources */,
 				0F682F4C19E5B1EB006230AB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
