@@ -1,0 +1,27 @@
+
+/* Class = "IBUILabel"; text = "$339.00"; ObjectID = "0IA-ak-87K"; */
+"0IA-ak-87K.text" = "$339.00";
+
+/* Class = "IBUILabel"; text = "20%"; ObjectID = "7oV-g9-Ano"; */
+"7oV-g9-Ano.text" = "20%";
+
+/* Class = "IBUILabel"; text = "$4.00"; ObjectID = "8RR-Ji-bCT"; */
+"8RR-Ji-bCT.text" = "$4.00";
+
+/* Class = "IBUILabel"; text = "$2.00"; ObjectID = "NgR-rd-Sdx"; */
+"NgR-rd-Sdx.text" = "$2.00";
+
+/* Class = "IBUILabel"; text = "Amount"; ObjectID = "SCb-o0-lsR"; */
+"SCb-o0-lsR.text" = "Amount";
+
+/* Class = "IBUITextField"; text = "20"; ObjectID = "VHk-Bh-jZJ"; */
+"VHk-Bh-jZJ.text" = "20";
+
+/* Class = "IBUILabel"; text = "10%"; ObjectID = "VbB-TH-2Hi"; */
+"VbB-TH-2Hi.text" = "10%";
+
+/* Class = "IBUILabel"; text = "15%"; ObjectID = "czt-Ha-jT0"; */
+"czt-Ha-jT0.text" = "15%";
+
+/* Class = "IBUIButton"; normalTitle = "Calculate Tip"; ObjectID = "sqM-xI-cBW"; */
+"sqM-xI-cBW.normalTitle" = "Calculate Tip";

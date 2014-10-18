@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        calculateTipButtonPressed(self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +31,25 @@ class ViewController: UIViewController {
     @IBAction func calculateTipButtonPressed(sender: AnyObject) {
     
         println("Tip")
+        
+        var amount = (amountTextField.text as NSString).doubleValue
+        
+        var tip10 = amount * 0.10
+        var tip15 = amount * 0.15
+        var tip20 = amount * 0.20
+        
+//        tip10Label.text = tip10.description
+//        tip15Label.text = tip15.description
+//        tip20Label.text = "$\(tip20)"
+        
+        // Format Number for Currency
+        
+        let numberFormatter = NSNumberFormatter()
+        numberFormatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
+        
+        tip10Label.text = numberFormatter.stringFromNumber(tip10)
+        tip15Label.text = numberFormatter.stringFromNumber(tip15)
+        tip20Label.text = numberFormatter.stringFromNumber(tip20)
         
     }
 
