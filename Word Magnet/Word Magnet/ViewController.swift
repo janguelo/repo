@@ -15,8 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         var wordArray = ["I", "like", "to", "eat", "fruit", "my", "favorite"]
-        view.backgroundColor = UIColor.blackColor()
-        
+        view.backgroundColor = UIColor(red: 52.0/255, green: 152.0/255, blue: 219.0/255, alpha: 1)
         for word in wordArray {
             
             var label = UILabel()
@@ -27,14 +26,14 @@ class ViewController: UIViewController {
             // label.center = CGPoint(x: 100, y: 200)
             label.backgroundColor = UIColor.whiteColor()
             
-            var x = CGFloat(arc4random_uniform(320))
-            var y = CGFloat(arc4random_uniform(480))
+            var x = CGFloat(50 + arc4random_uniform(300))
+            var y = CGFloat(100 + arc4random_uniform(450))
             
             label.center = CGPoint(x: x, y: y)
             
             
             view.addSubview(label)
-            
+        
             // Pan Gesture
             var panGesture = UIPanGestureRecognizer(target: self, action: Selector("handlePanGesture:"))
             label.addGestureRecognizer(panGesture)
@@ -45,7 +44,7 @@ class ViewController: UIViewController {
 
     func handlePanGesture(panGesture: UIPanGestureRecognizer) {
         
-        println("pan")
+        //println("pan")
         
         // get translation
         var translation = panGesture.translationInView(view)
