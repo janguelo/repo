@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NumberGuessingGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Number Guessing Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVt-vz-73f">
+                                <rect key="frame" x="160" y="20" width="271" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Guess a Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbl-dk-LsO">
+                                <rect key="frame" x="16" y="84" width="227" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pUa-Dz-4An">
+                                <rect key="frame" x="251" y="80" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="v8l-FT-QWs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qek-5g-luN">
+                                <rect key="frame" x="22" y="161" width="562" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmA-Ic-LH0">
+                                <rect key="frame" x="279" y="238" width="40" height="30"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gho-dg-Miv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGD-Ks-gFE">
+                                <rect key="frame" x="349" y="80" width="54" height="30"/>
+                                <state key="normal" title="Guess">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L32-Fb-Zb8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cbl-dk-LsO" firstAttribute="centerY" secondItem="pUa-Dz-4An" secondAttribute="centerY" constant="-0.5" id="0Ov-6U-77T"/>
+                            <constraint firstItem="pUa-Dz-4An" firstAttribute="leading" secondItem="Cbl-dk-LsO" secondAttribute="trailing" constant="8" id="0qi-Xn-Br1"/>
+                            <constraint firstItem="Qek-5g-luN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="39y-Nd-QYf"/>
+                            <constraint firstItem="Qek-5g-luN" firstAttribute="top" secondItem="pUa-Dz-4An" secondAttribute="bottom" constant="51" id="6rm-jg-VXz"/>
+                            <constraint firstItem="lGD-Ks-gFE" firstAttribute="leading" secondItem="pUa-Dz-4An" secondAttribute="trailing" constant="8" id="Bwx-IA-PRH"/>
+                            <constraint firstItem="Qek-5g-luN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Il6-Bx-dd5"/>
+                            <constraint firstItem="VVt-vz-73f" firstAttribute="centerX" secondItem="pUa-Dz-4An" secondAttribute="centerX" constant="-0.5" id="J16-8H-Bag"/>
+                            <constraint firstItem="lGD-Ks-gFE" firstAttribute="centerY" secondItem="pUa-Dz-4An" secondAttribute="centerY" id="MTv-cJ-wmF"/>
+                            <constraint firstItem="lGD-Ks-gFE" firstAttribute="leading" secondItem="pUa-Dz-4An" secondAttribute="trailing" constant="43" id="PV1-YE-uT2"/>
+                            <constraint firstItem="Cbl-dk-LsO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ThM-Z5-low"/>
+                            <constraint firstItem="VVt-vz-73f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aqZ-xE-0c3"/>
+                            <constraint firstItem="pUa-Dz-4An" firstAttribute="centerX" secondItem="Qek-5g-luN" secondAttribute="centerX" constant="-7.5" id="d46-P3-bhx"/>
+                            <constraint firstItem="WmA-Ic-LH0" firstAttribute="top" secondItem="pUa-Dz-4An" secondAttribute="bottom" constant="128" id="keE-AC-pSi"/>
+                            <constraint firstItem="WmA-Ic-LH0" firstAttribute="centerX" secondItem="pUa-Dz-4An" secondAttribute="centerX" constant="3.5" id="ley-J2-1lE"/>
+                            <constraint firstAttribute="centerX" secondItem="VVt-vz-73f" secondAttribute="centerX" constant="4.5" id="nen-TF-2uH"/>
+                            <constraint firstItem="pUa-Dz-4An" firstAttribute="top" secondItem="VVt-vz-73f" secondAttribute="bottom" constant="31" id="tZf-T0-Bgs"/>
+                            <constraint firstItem="WmA-Ic-LH0" firstAttribute="centerX" secondItem="Qek-5g-luN" secondAttribute="centerX" constant="9" id="zwl-Tf-1Ld"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zwl-Tf-1Ld"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="inputNumber" destination="pUa-Dz-4An" id="Z4f-Qo-fHL"/>
+                        <outlet property="resultLabel" destination="Qek-5g-luN" id="sJh-7i-Vwm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
